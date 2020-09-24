@@ -757,7 +757,7 @@ class ImportPhotos:
                                            'Lat': lat, 'Altitude': altitude, 'North': north,
                                            'Azimuth': azimuth,
                                            'Camera Maker': str(maker), 'Camera Model': str(model), 'Title': str(title),
-                                           'Comment': user_comm,'Path': imgpath, 'RelPath': RelPath,
+                                           'Comment': user_comm,'Path': 'file:///' + imgpath, 'RelPath': RelPath,
                                            'Timestamp': timestamp, 'Images': ImagesSrc},
                             "geometry": {"coordinates": [lon, lat], "type": "Point"}}
                 self.geoPhotos.append(geo_info)
